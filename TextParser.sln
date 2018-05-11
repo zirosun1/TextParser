@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextParser.demo", "TextParser\TextParser.demo.csproj", "{C290CD74-7DDB-4FD5-892D-6A726CBBA39C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextParser.core", "TextParser.core\TextParser.core.csproj", "{82B9FBBE-684D-40F0-B651-D473C48554FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC980A77-9600-44DA-AEF7-BF47ED85F419}"
+	ProjectSection(SolutionItems) = preProject
+		Task.txt = Task.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C290CD74-7DDB-4FD5-892D-6A726CBBA39C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C290CD74-7DDB-4FD5-892D-6A726CBBA39C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C290CD74-7DDB-4FD5-892D-6A726CBBA39C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C290CD74-7DDB-4FD5-892D-6A726CBBA39C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82B9FBBE-684D-40F0-B651-D473C48554FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82B9FBBE-684D-40F0-B651-D473C48554FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82B9FBBE-684D-40F0-B651-D473C48554FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82B9FBBE-684D-40F0-B651-D473C48554FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB789960-B314-4D86-A3A3-71DD61765705}
+	EndGlobalSection
+EndGlobal
