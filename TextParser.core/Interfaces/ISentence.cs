@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace TextParser.core.Interfaces
 {
-    interface ISentence
+    interface ISentence: IEnumerable<Word>, IEnumerable<PunctuationMark>
     {
+        Word[] Words { get; }
+        int Count { get; }
     }
 }
