@@ -9,6 +9,7 @@ namespace TextParser.core.Interfaces
     interface ISentence: IEnumerable<Word>, IEnumerable<PunctuationMark>
     {
         Word[] Words { get; }
+        PunctuationMark[] Punctuations { get; }
         int Count { get; }
     }
 }
