@@ -4,55 +4,63 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TextParser.core.Classes;
+using TextParser.core.Interfaces;
 
 namespace TextParser.core
 {
     class Sentence : Interfaces.ISentence
     {
-        private Word[] _words;
-        private PunctuationMark[] _punctuations;
-
-        public Sentence(IEnumerable<Word> words, IEnumerable<PunctuationMark> punctuations)
+  
+        private ICollection<Interfaces.ISentenceItem> _sentenceItems;
+        public Sentence(IEnumerable<ISentenceItem> items)
         {
-            _words = words.ToArray();
-            _punctuations = punctuations.ToArray();
+            foreach (var i in items)
+                _sentenceItems.Add(i);
         }
 
-        public Word[] Words
+        public ICollection<ISentenceItem> SentenceItems
         {
-            get { return _words; }
+            get { return _sentenceItems;  }
         }
 
-        public PunctuationMark[] Punctuations
+        public int Count => _sentenceItems.Count();
+
+        public bool IsReadOnly => _sentenceItems.IsReadOnly;
+
+        public void Add(ISentenceItem item)
         {
-            get { return _punctuations; }
+            _sentenceItems.Add(item);
         }
 
-        public int Count
+        public void Clear()
         {
-            get
-            {
-                if (_words != null && _punctuations != null)
-                {
-                    return _words.Count() + _punctuations.Count();
-                }
-                else return 0;
-            }
+            _sentenceItems.Clear();
         }
 
-        public IEnumerator<Word> GetEnumerator()
+        public bool Contains(ISentenceItem item)
         {
-            return _words.AsEnumerable().GetEnumerator();
+            return _sentenceItems.Contains(item);
         }
 
-        IEnumerator<PunctuationMark> IEnumerable<PunctuationMark>.GetEnumerator()
+        public void CopyTo(ISentenceItem[] array, int arrayIndex)
         {
-            return _punctuations.AsEnumerable().GetEnumerator();
+            _sentenceItems.CopyTo(array, arrayIndex);
+        }
+
+        public IEnumerator<ISentenceItem> GetEnumerator()
+        {
+            return _sentenceItems.GetEnumerator();
+        }
+
+        public bool Remove(ISentenceItem item)
+        {
+            return _sentenceItems.Remove(item);
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            return this._words.GetEnumerator();
+            return _sentenceItems.GetEnumerator();
         }
     }
 }
