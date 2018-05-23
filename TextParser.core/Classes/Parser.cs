@@ -8,14 +8,14 @@ namespace TextParser.core.Classes
 {
     class Parser
     {
-        string _text;
-        public void ParseText(String text)
+        public void ParseText(String source)
         {
-            if(text!=null)
+            if(source!=null)
             {
-               // text.Select(
+                Text text = new Text();
+                text.Add(source.Split('.').ToList)
+
             }
-            Sentence[] sentences;
         }
     }
 }

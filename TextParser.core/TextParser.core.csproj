@@ -52,6 +52,8 @@
     <Compile Include="Classes\Sentence.cs" />
     <Compile Include="Classes\Word.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
