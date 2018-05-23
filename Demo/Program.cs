@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
+using TextParser.core;
+using TextParser.core.Classes;
 
 namespace Demo
 {
@@ -12,7 +14,8 @@ namespace Demo
         static void Main(string[] args)
         {
             string path = Properties.Settings.Default.path;
-            System.Console.WriteLine(FileIO.ReadFile(path));
+            Parser.ParseText(FileIO.ReadFile(path));
+           // System.Console.WriteLine(FileIO.ReadFile(path));
             Console.ReadLine();
         }
     }

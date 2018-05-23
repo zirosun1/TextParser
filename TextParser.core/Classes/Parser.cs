@@ -6,15 +6,23 @@ using System.Threading.Tasks;
 
 namespace TextParser.core.Classes
 {
-    class Parser
+   public class Parser
     {
-        public void ParseText(String source)
+        public static void ParseText(String source)
         {
             if(source!=null)
             {
                 Text text = new Text();
-                text.Add(source.Split('.').ToList)
+                var strings = from str in source.Split(new Char [] {'.','?','!'})
+                              select str;
 
+                var words = from word in source.Split(new Char[] { ' ', ',', '.', ':', '\t' })
+                            select word;
+
+                //text.Sentences = (ICollection<Interfaces.ISentence>)strings;
+                foreach (var i in strings) Console.WriteLine(i);
+                foreach (var i in words) Console.WriteLine(i);
+                //"{0}.\n", strings
             }
         }
     }

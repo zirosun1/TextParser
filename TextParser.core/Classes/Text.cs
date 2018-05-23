@@ -14,11 +14,11 @@ namespace TextParser.core.Classes
         public ICollection<Interfaces.ISentence> Sentences
         {
             get { return _sentences; }
-            private set { _sentences = value; }
+            set { _sentences = value; }
         }
 
 
-       public Text(ICollection<ISentence> sentences)
+       public Text()
         {
             _sentences = new List<ISentence>();
         }

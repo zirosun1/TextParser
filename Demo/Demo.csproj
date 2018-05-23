@@ -59,5 +59,11 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TextParser.core\TextParser.core.csproj">
+      <Project>{82b9fbbe-684d-40f0-b651-d473c48554fe}</Project>
+      <Name>TextParser.core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
