@@ -37,6 +37,16 @@ namespace TextParser.core
             get { return (_symbols != null) ? _symbols.Length : 0; }
         }
 
+        public string Value { get {
+                StringBuilder sb = new StringBuilder();
+                foreach (var s in this._symbols)
+                {
+                    sb.Append(s.Symbols);
+                }
+                return sb.ToString();
+            }
+        }
+
         public IEnumerator<Symbol> GetEnumerator()
         {
             return _symbols.AsEnumerable().GetEnumerator();

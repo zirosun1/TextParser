@@ -8,5 +8,6 @@ namespace TextParser.core.Interfaces
 {
     interface ISentenceItem
     {
+        String Value { get; }
     }
 }

@@ -1,0 +1,7 @@
+C:\Users\doklu\Documents\GitHub\TextParser\Demo\bin\Debug\Demo.exe.config
+C:\Users\doklu\Documents\GitHub\TextParser\Demo\bin\Debug\Demo.exe
+C:\Users\doklu\Documents\GitHub\TextParser\Demo\bin\Debug\Demo.pdb
+C:\Users\doklu\Documents\GitHub\TextParser\Demo\obj\Debug\Demo.csprojResolveAssemblyReference.cache
+C:\Users\doklu\Documents\GitHub\TextParser\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
+C:\Users\doklu\Documents\GitHub\TextParser\Demo\obj\Debug\Demo.exe
+C:\Users\doklu\Documents\GitHub\TextParser\Demo\obj\Debug\Demo.pdb

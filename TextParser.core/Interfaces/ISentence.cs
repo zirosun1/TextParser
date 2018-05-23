@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace TextParser.core.Interfaces
 {
-    interface ISentence: IEnumerable<Word>, IEnumerable<PunctuationMark>
+    interface ISentence: ICollection<ISentenceItem>
     {
-        Word[] Words { get; }
-        PunctuationMark[] Punctuations { get; }
-        int Count { get; }
+        ICollection<ISentenceItem> SentenceItems { get; }
     }
 }

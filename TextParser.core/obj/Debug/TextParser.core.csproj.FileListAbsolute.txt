@@ -1,0 +1,6 @@
+C:\Users\doklu\Documents\GitHub\TextParser\TextParser.core\obj\Debug\TextParser.core.csprojResolveAssemblyReference.cache
+C:\Users\doklu\Documents\GitHub\TextParser\TextParser.core\obj\Debug\TextParser.core.csproj.CoreCompileInputs.cache
+C:\Users\doklu\Documents\GitHub\TextParser\TextParser.core\bin\Debug\TextParser.core.dll
+C:\Users\doklu\Documents\GitHub\TextParser\TextParser.core\bin\Debug\TextParser.core.pdb
+C:\Users\doklu\Documents\GitHub\TextParser\TextParser.core\obj\Debug\TextParser.core.dll
+C:\Users\doklu\Documents\GitHub\TextParser\TextParser.core\obj\Debug\TextParser.core.pdb
